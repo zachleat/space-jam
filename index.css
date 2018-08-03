@@ -33,3 +33,24 @@ main a[href]:focus {
   background-color: rgba(255,255,255,.2);
 }
 
+.navtext {
+  text-transform: uppercase;
+  color: #dcdc06;
+  font-family: Arial Narrow;
+  font-weight: 900;
+  font-size: 0.875em; /* 14px /16 */
+  display: inline-block;
+  perspective: 40px;
+}
+.navtext span {
+  display: inline-block;
+}
+.navtext :first-child {
+  transform-origin: 100% 50%;
+  transform: rotate3d(0, -1, 0, 20deg);
+}
+.navtext :last-child {
+  transform-origin: 0% 50%;
+  transform: rotate3d(0, -1, 0, -20deg);
+}
+
