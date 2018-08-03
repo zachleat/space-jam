@@ -9,9 +9,6 @@
   clip: rect(1px, 1px, 1px, 1px);
 }
 
-/** {
-  outline: 1px dotted;
-}*/
 body {
   background-color: #000;
   /*background-image: none;*/
@@ -31,7 +28,10 @@ main a[href]:hover,
 main a[href]:focus {
   opacity: 1;
   background-color: rgba(255,255,255,.2);
+  border-radius: .3em;
 }
+
+/* NavText */
 
 .navtext {
   text-transform: uppercase;
@@ -41,6 +41,7 @@ main a[href]:focus {
   font-size: 0.875em; /* 14px /16 */
   display: block;
   perspective: 40px;
+  text-align: center;
 }
 .navtext span {
   display: inline-block;
@@ -54,3 +55,48 @@ main a[href]:focus {
   transform: rotate3d(0, -1, 0, -20deg);
 }
 
+/* Grid */
+
+* {
+  /*outline: 1px dotted;*/
+}
+.nav {
+  width: 80%;
+}
+.nav .logo {
+  text-align: center;
+}
+@media (max-width: 639px) {
+  .nav td {
+    display: block;
+    margin: 0 0 1em;
+    text-align: center;
+  }
+  .nav br,
+  .nav td:empty {
+    display: none;
+  }
+  .nav tr:nth-child(3) {
+    order: -1;
+    display: flex;
+    flex-direction: column;
+  }
+  .nav tr:nth-child(3) td:nth-child(2) {
+    order: -1;
+  }
+  .nav tbody {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
+@media (min-width: 640px) {
+  body {
+    background-size: 15vw 15vw;
+  }
+  .nav .logo img {
+    width: 40vw;
+    height: auto;
+    margin-right: -4vw;
+  }
+}
