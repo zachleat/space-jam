@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 
 <meta charset="utf-8">
@@ -38,6 +38,13 @@
 <style type="text/css">
   .footer-links {
     margin: 5px;
+  }
+  .a11y-hide {
+  	position: absolute;
+    height: 1px;
+    width: 1px; 
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
   }
 </style>
 
@@ -80,7 +87,7 @@
 
 
 
-
+<main role="main">
 <table width=500 border=0>
 
 
@@ -309,7 +316,8 @@
 
 
 
-<img src="img/p-jamlogo.gif" height=165 width=272 alt="Space Jam" border=0>
+<img src="img/p-jamlogo.gif" height=165 width=272 alt="" border=0>
+<h1 class="a11y-hide">Space Jam</h1>
 
 
 
@@ -490,6 +498,7 @@
 
 
 </table>
+</main>
 
 
 
@@ -516,7 +525,7 @@
 
 
 
-
+<footer role="complementary">
 <br>
 <font class="footer-links" size="-1"><a href="https://policies.warnerbros.com/privacy/en-us/" target="_blank">Privacy Policy</a></font>
 <font class="footer-links" size="-1"><a href="http://policies.warnerbros.com/terms/en-us/" target="_blank">Terms</a></font>
@@ -532,7 +541,7 @@
 
 
 <font size="-1">SPACE JAM, characters, names, and all related<br>indicia are trademarks of Warner Bros. &copy; 1996</font><br>
-
+</footer>
 
 
 </center>
