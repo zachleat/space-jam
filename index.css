@@ -39,7 +39,7 @@ main a[href]:focus {
   font-family: Arial Narrow;
   font-weight: 900;
   font-size: 0.875em; /* 14px /16 */
-  display: inline-block;
+  display: block;
   perspective: 40px;
 }
 .navtext span {
