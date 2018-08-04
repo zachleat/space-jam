@@ -18,6 +18,9 @@ body,
 :visited {
   color: #fff;
 }
+table {
+  width: auto;
+}
 main a[href] {
   opacity: .95;
   display: inline-block;
@@ -29,6 +32,9 @@ main a[href]:focus {
   opacity: 1;
   background-color: rgba(255,255,255,.2);
   border-radius: .3em;
+}
+font {
+  font-size: 1em; /* 16px /16 */
 }
 
 /* NavText */
@@ -61,7 +67,7 @@ main a[href]:focus {
   /*outline: 1px dotted;*/
 }
 .nav {
-  width: 80%;
+  width: 100%;
 }
 .nav .logo {
   text-align: center;
@@ -93,6 +99,9 @@ main a[href]:focus {
 @media (min-width: 640px) {
   body {
     background-size: 15vw 15vw;
+  }
+  .nav {
+    width: 80%;
   }
   .nav .logo img {
     width: 40vw;
