@@ -7,7 +7,7 @@
 <meta name="description" content="Space JAM">
 <link rel="preload" href="index.css" as="style">
 <link rel="preload" href="img/p-jamlogo.svg" as="image">
-<link rel="manifest" href="/manifest.webmanifest">
+<link rel="manifest" href="manifest.webmanifest">
 <meta name="theme-color" content="#000000">
 
 
@@ -538,7 +538,7 @@
 <script>
 if ("serviceWorker" in navigator) {
 	window.addEventListener("load", function() {
-		navigator.serviceWorker.register("/serviceworker.js").then(function(registration) {
+		navigator.serviceWorker.register("serviceworker.js").then(function(registration) {
 			// Registration was successful
 			console.log("ServiceWorker registration successful with scope: ", registration.scope);
 		}, function(err) {

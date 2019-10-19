@@ -1,0 +1,27 @@
+{
+  "name": "space-jam",
+  "version": "1.0.0",
+  "description": "A responsive version of the original space-jam web site.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zachleat/space-jam.git"
+  },
+  "scripts": {
+    "build": "npx @11ty/eleventy --quiet --pathprefix=/space-jam/ --passthroughall",
+    "serve": "npx @11ty/eleventy --quiet --pathprefix=/space-jam/ --passthroughall --serve"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Zach Leatherman",
+    "email": "zachleatherman@gmail.com",
+    "url": "https://zachleat.com/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zachleat/space-jam/issues"
+  },
+  "homepage": "https://github.com/zachleat/space-jam#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.9.0"
+  }
+}

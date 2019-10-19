@@ -1,6 +1,6 @@
 var CACHE_NAME = "spacejam-v1";
 var urlsToCache = [
-	"/",
+	"/space-jam/",
 	"index.css",
 	"img/bg_stars.gif",
 	"img/p-bball.svg",
